@@ -47,8 +47,7 @@ export function Contact() {
 
           <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
             Estou sempre aberto a novas oportunidades, projetos interessantes ou 
-            apenas um bate-papo sobre tecnologia. Minha caixa de entrada esta 
-            sempre aberta!
+            apenas um bate-papo sobre tecnologia. Será um prazer conversar e trocar experiências!
           </p>
 
           {/* CTA Button */}
