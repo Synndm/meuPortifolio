@@ -75,8 +75,8 @@ export function Navigation() {
           className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           asChild
         >
-          <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer">
-            Currículo
+          <a href="/curriculo_josiel_ti_ats.pdf" target="_blank" rel="noopener noreferrer">
+            Ver currículo
           </a>
         </Button>
 

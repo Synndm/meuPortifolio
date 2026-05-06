@@ -20,65 +20,65 @@ const projects = [
     featured: true,
   },
   {
-    title: "App de Tarefas",
+    title: "Restaurante Serliana",
     description:
-      "Aplicação de produtividade com organização por categorias, filtros avançados e persistência de dados. Design focado em usabilidade.",
+      "Aplicação web inspirada na arquitetura e estética da era renascentista, desenvolvida para representar digitalmente um restaurante temático através de uma interface moderna, responsiva e visualmente imersiva. O projeto combina identidade clássica, experiência do usuário e apresentação elegante dos produtos.",
     image:
-      "https://example.com",
+      "./restauranteserliana.png",
     problem:
-      "Ajudar usuários a organizar suas tarefas diárias de forma eficiente.",
-    technologies: ["Next.js", "TypeScript", "Prisma"],
-    github: "https://github.com",
-    demo: "https://example.com",
+      "Unir identidade visual temática e experiência digital moderna para tornar a navegação do cardápio mais atrativa e imersiva para os usuários.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Synndm/restaurante-interface",
+    demo: "https://restaurante-serliana.vercel.app/",
     featured: true,
   },
   {
-    title: "Landing Page SaaS",
+    title: "Landing Page de Aniversário",
     description:
-      "Página de conversão moderna com seções estratégicas, animações suaves e design responsivo. Otimizada para performance.",
+      "Landing page desenvolvida para divulgação de aniversário com temática noturna/cyberpunk, com contagem regressiva em tempo real, animações e design responsivo.",
     image:
-      "https://example.com",
+      "./landingpageaniversario.png",
     problem:
-      "Converter visitantes em leads através de uma apresentação impactante.",
+      "Tornar celebrações mais marcantes através de uma experiência digital personalizada, moderna e visualmente atrativa.",
     technologies: ["Next.js", "Framer Motion", "Tailwind"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/Synndm/aniversario_synndm",
+    demo: "aniversario-synndm.vercel.app",
     featured: true,
   },
   {
-    title: "Sistema de Quiz",
+    title: "Sorteador de Números",
     description:
       "Plataforma interativa de perguntas e respostas com feedback instantâneo e pontuação.",
     image:
       "https://example.com",
     problem: "Tornar o aprendizado mais engajante através da gamificação.",
-    technologies: ["React", "CSS", "JavaScript"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    technologies: ["HTML5","Grunt","LESS", "JavaScript"],
+    github: "https://github.com/Synndm/sorteador_grunt",
+    demo: "https://sorteador-grunt-gamma-vert.vercel.app/",
     featured: false,
   },
   {
-    title: "Clone Netflix",
+    title: "Clone Disney+",
     description:
-      "Reprodução da interface do Netflix com carrossel de filmes e design pixel-perfect.",
+      "Clone da interface da Disney+ desenvolvido com foco em responsividade, fidelidade visual e experiência do usuário.",
     image:
-      "https://example.com",
-    problem: "Demonstrar habilidades de CSS avançado e atenção aos detalhes.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com",
-    demo: "https://example.com",
+      "./clonedisney.png",
+    problem: "Explorar o desenvolvimento de interfaces modernas e escaláveis através da recriação de uma plataforma de streaming amplamente utilizada.",
+    technologies: ["HTML5", "CSS3","Gulp","SASS", "JavaScript"],
+    github: "https://github.com/Synndm/clone-disney-plus",
+    demo: "https://clone-disney-plus-7vv6-2e98vdjsm-synndms-projects.vercel.app/",
     featured: false,
   },
   {
-    title: "Calculadora Financeira",
+    title: "Galeria de Fotos",
     description:
-      "Ferramenta para cálculos de investimentos e juros compostos com interface clara.",
+      "Aplicação para adicionar imagens dinamicamente através de URLs, permitindo atualização em tempo real da galeria de forma simples e intuitiva.",
     image:
       "https://example.com",
-    problem: "Facilitar decisões financeiras com cálculos automatizados.",
-    technologies: ["React", "TypeScript", "Chart.js"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    problem: "Permitir a adição dinâmica de imagens na galeria através de URLs de forma simples e interativa.",
+    technologies: ["JQuery", "CSS3", "HTML5"],
+    github: "https://github.com/Synndm/jquery-galeria-fotos",
+    demo: " https://syn-jquery-galeria-fotos.vercel.app/",
     featured: false,
   },
 ]
@@ -113,7 +113,7 @@ function FeaturedProject({
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent" />
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-8xl font-bold text-primary/10">
-              {String(index + 1).padStart(2, "0")}
+              
             </span>
           </div>
           <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-4">
@@ -126,7 +126,7 @@ function FeaturedProject({
             <Button size="sm" asChild>
               <a href={project.demo} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4 mr-2" />
-                Demo
+                Visitar
               </a>
             </Button>
           </div>
