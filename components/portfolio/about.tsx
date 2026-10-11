@@ -55,7 +55,7 @@ export function About() {
     >
       <div className="max-w-6xl mx-auto">
         <div
-          className={`transition-all duration-700 ${
+          className={`transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -99,7 +99,7 @@ export function About() {
               {highlights.map((item, index) => (
                 <div
                   key={item.title}
-                  className={`group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 ${
+                  className={`group p-6 rounded-xl bg-card/90 border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-purple-900/30 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                   }`}
                   style={{ transitionDelay: `${(index + 1) * 100}ms` }}

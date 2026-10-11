@@ -33,7 +33,7 @@ export function Contact() {
     >
       <div className="max-w-3xl mx-auto">
         <div
-          className={`text-center space-y-8 transition-all duration-700 ${
+          className={`text-center space-y-8 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -54,7 +54,7 @@ export function Contact() {
           <div className="pt-4">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 hover:-translate-y-0.5 transition-all"
               asChild
             >
               <a href="https://wa.me/5591982185014">

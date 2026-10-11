@@ -35,7 +35,7 @@ export function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/90 backdrop-blur-lg border-b border-border shadow-lg shadow-background/10"
+          ? "bg-[#0b0714]/85 backdrop-blur-md border-b border-border shadow-lg shadow-purple-950/30"
           : "bg-transparent"
       }`}
     >
@@ -59,7 +59,7 @@ export function Navigation() {
             <li key={item.name}>
               <button
                 onClick={() => handleNavClick(item.href)}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary/50 group"
+                className="relative px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary/50 group after:absolute after:left-4 after:right-4 after:bottom-1 after:h-px after:bg-primary after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
               >
                 <span className="text-primary font-mono text-xs mr-1">{item.number}.</span>
                 {item.name}
@@ -72,10 +72,10 @@ export function Navigation() {
         <Button
           variant="outline"
           size="sm"
-          className="hidden md:inline-flex border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          className="hidden md:inline-flex bg-transparent border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           asChild
         >
-          <a href="/curriculo_josiel_ti_ats.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Curriculo_Josiel_Modesto-4.pdf" target="_blank" rel="noopener noreferrer">
             Ver currículo
           </a>
         </Button>
@@ -98,7 +98,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 top-16 bg-background/98 backdrop-blur-lg transition-all duration-300 ${
+        className={`md:hidden fixed inset-0 top-16 bg-[#0b0714]/[0.97] transition-all duration-300 ${
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -134,7 +134,7 @@ export function Navigation() {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             asChild
           >
-            <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Curriculo_Josiel_Modesto-4.pdf" target="_blank" rel="noopener noreferrer">
               Currículo
             </a>
           </Button>

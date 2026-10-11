@@ -6,18 +6,23 @@ import { Technologies } from "@/components/portfolio/technologies"
 import { Experience } from "@/components/portfolio/experience"
 import { Contact } from "@/components/portfolio/contact"
 import { Footer } from "@/components/portfolio/footer"
+import { BackgroundGlow, MotionProvider, ScrollProgress } from "@/components/portfolio/motion"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      <Technologies />
-      <Experience />
-      <Contact />
-      <Footer />
-    </main>
+    <MotionProvider>
+      <main className="relative min-h-screen overflow-x-clip bg-background text-foreground">
+        <BackgroundGlow />
+        <ScrollProgress />
+        <Navigation />
+        <Hero />
+        <About />
+        <Projects />
+        <Technologies />
+        <Experience />
+        <Contact />
+        <Footer />
+      </main>
+    </MotionProvider>
   )
 }
